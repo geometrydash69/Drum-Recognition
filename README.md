@@ -12,9 +12,14 @@ My Project is The Drum Recognizer. My Project uses images of drums and recognize
   
   3. put model_best.pth.tar and resnet18.onnx in jetson-inference/python/training/classification/models/drums
   
-  4.Set the variables as NET=models/drum and DATASET=data/drums in the Terminal
+  4.Set the variables in terminal
+
+```
+  NET=models/drum  
+  DATASET=data/drums
+```
   
   5.Then Put imagenet.py --model=$NET/resnet18.onnx --input_blob=input_0 --output_blob=output_0 --labels=$DATASET/labels.txt $DATASET/test/bass/bass.jpg bass.jpg 
   
-  6. and if you want to do a diffrent image replace the image and the dataset file path with your own imagefile 
+  6. And if you want to do a diffrent image replace the image and the dataset file path with your own imagefile 
 Hope you find this useful!
