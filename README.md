@@ -8,20 +8,24 @@ My Project is The Drum Recognizer. My Project uses images of drums and recognize
   
   1.Get a Jetson Nano and install the Jetson Inference library and Python 3 on your system
   
-  2.makes a drums folder in the models directory at jetson-inference/python/training/classification/models
+  2.Makes a drums folder in the models directory at jetson-inference/python/training/classification/models
   
-  3. put model_best.pth.tar and resnet18.onnx in jetson-inference/python/training/classification/models/drums
+  3.Put model_best.pth.tar and resnet18.onnx in jetson-inference/python/training/classification/models/drums
+
+  4.Put the drums folder in jetson-inference/python/training/classification/data
   
-  4.Set the variables in terminal
+  5.Set the variables in terminal
 
 ```
   NET=models/drum  
   DATASET=data/drums
 ```
   
-  5.Input this command to run the model
+  6.Input this command to run the model
 ```
   imagenet.py --model=$NET/resnet18.onnx --input_blob=input_0 --output_blob=output_0 --labels=$DATASET/labels.txt $DATASET/test/bass/bass.jpg bass.jpg
 ```
-  6. And if you want to do a diffrent image replace the image and the dataset file path with your own imagefile 
-Hope you find this useful!
+  7. And if you want to do a diffrent image replace the image and the dataset file path with your own imagefile 
+
+### Hope you find this useful!
+
