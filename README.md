@@ -15,7 +15,7 @@ My Project is The Drum Recognizer. My Project uses images of drums and recognize
   4.Put the drums folder in jetson-inference/python/training/classification/data
   
   5.Set the variables in terminal
-
+Code Demo:https://youtu.be/M6NI0q29WnY
 ```
   NET=models/drum  
   DATASET=data/drums
