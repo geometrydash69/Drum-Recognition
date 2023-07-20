@@ -19,7 +19,9 @@ My Project is The Drum Recognizer. My Project uses images of drums and recognize
   DATASET=data/drums
 ```
   
-  5.Then Put imagenet.py --model=$NET/resnet18.onnx --input_blob=input_0 --output_blob=output_0 --labels=$DATASET/labels.txt $DATASET/test/bass/bass.jpg bass.jpg 
-  
+  5.Input this command to run the model
+```
+  imagenet.py --model=$NET/resnet18.onnx --input_blob=input_0 --output_blob=output_0 --labels=$DATASET/labels.txt $DATASET/test/bass/bass.jpg bass.jpg
+```
   6. And if you want to do a diffrent image replace the image and the dataset file path with your own imagefile 
 Hope you find this useful!
