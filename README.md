@@ -1,6 +1,9 @@
 # Drum-Recognizer
 My Project works with image recognition in the Jetson Inference library. You can see and use the code in my-recognition.py.
 
+## Download models here
+https://drive.google.com/drive/folders/1E3B3eOU-ZiVuGJJ_RhI4-JtWAfZEwTkj?usp=sharing
+
 ## The Algorithom:
 My Project is The Drum Recognizer. My Project uses images of drums and recognizes what kind of drum it is. how it works is it the set of training images is used for transfer learning, while the validation images are used to evaluate classification accuracy during training, and the test images are to be used after training completes.
 
